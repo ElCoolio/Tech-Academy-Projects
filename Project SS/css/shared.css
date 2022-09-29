@@ -157,8 +157,8 @@ section {
     width: 100%;
     display: block;
     height: auto;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 500px;
+    padding-bottom: 300px;
     color: #fff;
 }
 
@@ -368,12 +368,12 @@ section {
         font-size: 24px;
     }
 }
-@media (min-width: 768px) {
+@media all and (max-width:992px) and (min-width: 768px) {
     .container{
         width: 750px;
     }
 }
-@media (min-width: 992px) {
+@media all and (max-width:768) and(min-width: 992px) {
     .container{
         font-size: 970px;
     }
