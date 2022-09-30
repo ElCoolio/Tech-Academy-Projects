@@ -217,7 +217,12 @@ section {
     border: 5px double #fff;
     padding: 10px;
 }
-
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 .head-sub-main{
     font-size: 23px;
     font-weight: 50;
