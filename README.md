@@ -6,7 +6,7 @@ Two sections currently
 -HTML and CSS
 -JavaScript
 
-##HTML and CSS
+## HTML and CSS
 completed section fully, projects of note.
 
 -One-Page Website
@@ -14,5 +14,5 @@ completed section fully, projects of note.
 -Portfolio
 -bootstrap4_project
 
-##JavaScript
+## JavaScript
 section just started, will be adding to this as the bootcamp progresses.
