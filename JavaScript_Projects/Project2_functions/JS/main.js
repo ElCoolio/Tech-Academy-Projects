@@ -7,3 +7,8 @@ function displayDate() { //utalizes get ElementByID to display the current date 
     sentence += " It is nice to meet you!";
     document.getElementById("demo2").innerHTML = sentence;
   }
+
+  function displaySolution() { //utilizes get ElementByID to display a simple string using operators
+    var answer = "21"
+    document.getElementById("demo3").innerHTML = answer;
+  }
