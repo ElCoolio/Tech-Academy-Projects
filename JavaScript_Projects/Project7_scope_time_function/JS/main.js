@@ -1,4 +1,4 @@
-function GreetingIf() {
+function GreetingIf() { //Simple if state to post text if the time of day is less than 6 PM
     if (new Date().getHours() < 18){
         document.getElementById("greeting").innerHTML = ("Hello World!");
     }
@@ -50,4 +50,4 @@ function Time_function(){ //Time function with If/Else
 console.log(2+2); //display 4 in the console log
 console.log(6<5); //display false in the console log
 console.log(5==5); //display true in console log using ==
-// console.log(6=5); //display an error in console on purpose
+//console.log(6=5); //display an error in console on purpose
