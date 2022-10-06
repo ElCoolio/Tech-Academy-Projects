@@ -1,6 +1,7 @@
 function my_DataType(){ //declare a variable and post its data type when even occurs
     var num = 5
-    document.getElementById("DataType1").innerHTML = (typeof num);
+    document.write("The variable num is a " + typeof num + " and equals ");
+    document.write(num);
   }
 
   function my_DataType2(){ //declare a variable and use data coercion to combine it with another number, but as a string
@@ -28,11 +29,14 @@ function my_DataType(){ //declare a variable and post its data type when even oc
   function NegativeInfinityChallenge(){ //Attempt to print a number smaller than the negative float number limit
     document.getElementById("negInfinityVar").innerHTML = (-3e310);
   }
-  function NegativeInfinityChallenge(){ //Attempt to print a number smaller than the negative float number limit
-    document.getElementById("negInfinityVar").innerHTML = (-3e310);
-  }
-  function BooleanTest(){ //Attempt to print a number smaller than the negative float number limit
-    document.getElementById("booleanTxt").innerHTML = (5<6);
+  function BooleanTest(){ //A few statements using Boolean Logic Operators
+    document.getElementById("booleanTxt1").innerHTML = ("5 less than 6? " + (5<6));
+    document.getElementById("booleanTxt2").innerHTML = ("5 greater than 6 OR less than 10? " + (5>6||5<10));
+    document.getElementById("booleanTxt3").innerHTML = ("5 greater than 6 AND less than 10? " + (5>6&&5<10));
+    document.getElementById("booleanTxt4").innerHTML = ("5 greater than 6 OR greater than 10? " + (5>6||5>10));
+    document.getElementById("booleanTxt5").innerHTML = ("5 less than 6 AND less than than 10? " + (5<6&&5<10));
+    document.getElementById("booleanTxt6").innerHTML = ("5 NOT less than 6? " + !(5<6));
+    document.getElementById("booleanTxt7").innerHTML = ("5 NOT greater than 6? " + !(5>6));
   }
   function TripleEquals(){ //print some text using === operator
     var num3 = 5;
