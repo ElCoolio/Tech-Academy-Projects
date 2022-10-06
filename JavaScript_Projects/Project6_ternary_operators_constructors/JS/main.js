@@ -1,7 +1,7 @@
 function Voter_Function(){ //ternary operator example
     var Age, Can_vote; //variables
     Age = document.getElementById("Age").value; //getting variable from user
-    Can_vote = (Age < 18 || Age == 18) ? "You are too young":"You are old enough"; //ternary operator to display text
+    Can_vote = (Age > 18 || Age == 18) ? "You are old enough":"You are too young"; //ternary operator to display text
     document.getElementById("Vote").innerHTML = Can_vote + " to vote."; // full return
 }
 
