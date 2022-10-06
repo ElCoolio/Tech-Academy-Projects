@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"?
+<html lang="en"?>
 	<head>
 		<title>Basic JavaScript</title>
 		<meta charset="utf-8">
@@ -8,11 +8,33 @@
 	<body>
         <!--Script Source-->
         <script src="./JS/main.js"></script>
-        <!--Global and Local Variables DIV-->
+        <!--If statements and getDate() DIV-->
         <div>
-            <button onclick="Global_Var()">Let's do some math!</button> <!--Button for event-->
-            <p id="globalVar"></p> <!--Place holder txt-->
-            <button onclick="Global_Var2()">Let's do some math!</button> <!--Button for event-->
-            <p id="globalVar2"></p> <!--Place holder txt-->
+            <button onclick="GreetingIf()">Greeting?</button> <!--Button for event-->
+            <p id="greeting"></p> <!--Place holder txt-->
         </div>
+
+        <!-- Own If Statement DIV-->
+        <div>
+            <p>Put a number greater than 5.</p>
+            <input id="Num" value="" /> <!--Declaring a variable and placing a value for it-->
+            <button onclick="OwnIf()">Click here</button> <!--Button for event-->
+            <p id="Result"></p> <!--Place holder txt-->
+        </div>
+
+        <!-- Own If/Else Statement DIV-->
+        <div>
+            <p>Put a number greater than 7.</p>
+            <input id="Num2" value="" /> <!--Declaring a variable and placing a value for it-->
+            <button onclick="myFunction()">Click here</button> <!--Button for event-->
+            <p id="Result2"></p> <!--Place holder txt-->
+        </div>
+        
+        <!-- Time Function with If Else DIV-->
+        <div>
+            <button onclick="Time_function()">Click here to get the time.</button> <!--Button for event-->
+            <p id="Time_of_Day"></p> <!--Place holder txt-->
+        </div>
+
     </body> 
+</html>
