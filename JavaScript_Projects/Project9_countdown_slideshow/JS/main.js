@@ -1,4 +1,4 @@
-function countdown(){
+function countdown(){  // Script that takes the input from the input box, displays a text and changes it every second to count down, at 0 an alert box appears.
     var seconds = document.getElementById("seconds").value;
 
     function tick() {
@@ -14,7 +14,9 @@ function countdown(){
     tick();   
 }
 
-let slideInde = 1;
+
+// First slide on load
+let slideIndex = 1;
 showSlides(slideIndex);
 
 //Next/previous controls
@@ -22,12 +24,24 @@ function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
+// Thumbnail image controls
+function currentSlide(n){
+    showSlides(slideIndex = n);
+
+}
+
+//Function that creates the slide, as buttons either the dots and arrows are click the image changes
 function showSlides(n){
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1} {
+    if (n > slides.length) {slideIndex = 1} 
+    for (i=0; i < slides.length; i++){
         slides[i].style.display = "none";
     }
-    for ()
+    for (i=0; i<dots.length;i++){
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
 }

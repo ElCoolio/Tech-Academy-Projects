@@ -71,6 +71,7 @@
     transition: background-color 0.6s ease;
 }
 
+/* Change color on hover */
 .active, .dot:hov {
     background-color: #717171;
 }
@@ -81,6 +82,7 @@
     animation-duration: 1.5;
 }
 
+/* animation style */
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
