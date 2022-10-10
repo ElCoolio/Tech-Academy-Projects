@@ -13,3 +13,21 @@ function countdown(){
     }
     tick();   
 }
+
+let slideInde = 1;
+showSlides(slideIndex);
+
+//Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n){
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1} {
+        slides[i].style.display = "none";
+    }
+    for ()
+}
