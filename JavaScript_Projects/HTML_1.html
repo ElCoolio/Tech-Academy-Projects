@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"?>
+	<head>
+		<title>Basic JavaScript</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Stephen">
+        <link rel = "stylesheet" type = "text/css" href = "CSS_1.css">
+	</head>
+	<body>
+
+        <!-- H1 and H3 div-->
+        <div>
+            <h1 class="click">This text will change</h1>
+            <h3 class="click">This text will not change</h3>
+            <button onclick="textChange()">Click here to change the text!</button>
+        </div>
+
+        <!--Canvas Div-->
+        <div>
+            <canvas id="myCanvas" width="500" height="250" style="border:5px solid black;"></canvas>
+            <button onclick="DrawCanvas()">Click here draw  in the canvas</button>
+        </div>
+
+        <!--Gradient Canvas Div-->
+        <div>
+            <canvas id="myCanvas2" width="500" height="250" style="border:5px solid black;"></canvas>
+            <button onclick="DrawCanvas2()">Click here draw  in the canvas</button>
+        </div>
+
+        <!--Form div-->
+        <div class="formStyle">
+            <form name="myForm" action="javascript:alert('Submitted')" onsubmit="return validateForm()" method="post">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="" placeholder="Enter your First Name"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="" placeholder="Enter your Last Name">
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+        <!--Script Source-->
+        <script src="JavaScript_1.js"></script>
+    </body> 
+</html>
