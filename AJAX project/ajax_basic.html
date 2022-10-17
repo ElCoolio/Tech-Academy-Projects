@@ -24,6 +24,7 @@
             ajax.onreadystatechange = function() { //basically this is a listener script that monitors the process or the XMLHttp Request
                 if (ajax.readyState == 4) { //when the "readyState" is equal to 4 (which means the request is fully processed) the following will complete
                     document.getElementById("content").innerHTML = ajax.responseText; //This updates the website with the XML request content, now that we know the process is complete                }
+                }
             }
             // Step 4: send the ajax request for data
             function getContent(){
