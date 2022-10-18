@@ -25,7 +25,7 @@ body.fade-out {
 /* Heading 1 elements */
 h1 {
     text-transform: uppercase; /*capitalizing all h1 headings */
-    font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
+    font-family:  'Trebuchet MS', sans-serif; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
     color: #1a1a1a; 
@@ -46,7 +46,7 @@ h1:hover {
 
 /* Paragraph elements */
 p {
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: 'Courier New', monospace;
     text-align: justify; /* This justifies the text within paragraph elements */
     letter-spacing: .1vw; /* This expands the text slightly */
     font-size: 2.5vw; /* Relative font sizing equal to 2.5% of the viewport width */
@@ -108,13 +108,13 @@ footer {
 /***** Navbar Styling *****/
 .Navbar {
     overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
-    background-color: black; /* This colors the navbar black */
+    background-color: cornflowerblue; /* This colors the navbar black */
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
     top: 0; /* This ensures no space is displayed above the navbar */
     width: 100%; /* This makes the navbar span the entire width of the page */
     z-index: 1; /* This ensures other elements don't display over the navbar */
-    -webkit-animation: moveNav 5s; /* Safari 4.0 - 8.0 */
-    animation: moveNav 5s; /* This makes the moveNav animation last 5 seconds */
+    -webkit-animation: moveNav 5s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
+    animation: moveNav 5s; /* This applies the moveNav animation for all other browsers */
 }
 
 /* The animation effect for moving the nav bar in from above the left of the screen on page load */
@@ -155,7 +155,7 @@ footer {
 
 /* Navbar home button */
 .Navbar a.active { /* This targets the a element on the navbar with the "active" class */
-    background-color: darkgray;
+    background-color: darkslateblue;
 }
 /***** End of Navbar Styling *****/
 
