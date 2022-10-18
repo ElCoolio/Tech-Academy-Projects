@@ -23,8 +23,11 @@ function DrawCanvas2(){
 
 function validateForm() {
     let x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-      alert("Name must be filled out");
+    let y = document.forms["myForm"]["lname"].value;
+    let z = document.forms["myForm"]["phonenum"].value;
+    if (x == "" || y == "" || z == '' ) {
+      alert("The three fields must be filled");
       return false;
     }
   }
+

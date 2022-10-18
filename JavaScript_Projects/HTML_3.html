@@ -2,8 +2,10 @@
 <html lang="en"?>
 	<head>
 		<title>Basic JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<meta name="author" content="Stephen">
+        <link rel = "stylesheet" type = "text/css" href = "CSS_3.css">
 	</head>
 	<body>
 
@@ -18,6 +20,27 @@
                 <li onclick="displayType(this)" id = "Star Trek" data-character-type="Jean-Luc Picard">Star Trek</li>
             </ul>
         </div>
+
+        <!--button Div-->
+        <div>
+            <button onclick="popupForm()">Click here to open a popup form</button>
+        </div>
+
+        <!--FormDIV-->
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Login</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
 
         <!--Script Source-->
         <script src="JavaScript_3.js"></script>

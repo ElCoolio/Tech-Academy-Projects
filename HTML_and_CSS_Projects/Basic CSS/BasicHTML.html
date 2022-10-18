@@ -5,8 +5,13 @@
 		<meta charset="utf-8">
 		<meta name="author" content="Stephen">
         <link rel = "stylesheet" type = "text/css" href = "./css/basic_style.css">
+
 	</head>
 	<body>
+        <script>
+            document.body.classList.add('fade-out');
+        </script>
+
         <div>
             <h1>Basic CSS Demo</h1>
         </div>
@@ -24,5 +29,11 @@
                 <p>Box 4</p>
             </div>
 		</div>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
+            });
+        </script>
+
 	</body>
 </html>

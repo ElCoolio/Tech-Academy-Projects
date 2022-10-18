@@ -1,0 +1,15 @@
+.photo img{
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+.photo:hover img{
+    transform: scale(1.1);
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }

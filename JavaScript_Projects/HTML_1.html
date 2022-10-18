@@ -7,10 +7,12 @@
         <link rel = "stylesheet" type = "text/css" href = "CSS_1.css">
 	</head>
 	<body>
-
+        <script>
+            document.body.classList.add('fade.out');
+        </script>
         <!-- H1 and H3 div-->
         <div>
-            <h1 class="click">This text will change</h1>
+            <h1 class="click" style="font-size:8vw;">This text will change</h1>
             <h3 class="click">This text will not change</h3>
             <button onclick="textChange()">Click here to change the text!</button>
         </div>
@@ -34,6 +36,7 @@
                 <input type="text" id="fname" name="fname" value="" placeholder="Enter your First Name"><br>
                 <label for="lname">Last name:</label><br>
                 <input type="text" id="lname" name="lname" value="" placeholder="Enter your Last Name">
+                <input type="text" id="phonenum" name="phonenum" value="" placeholder="Enter your phone number">
                 <input type="submit" value="Submit">
               </form>
         </div>
@@ -50,7 +53,14 @@
                 document.getElementById("demo").innerHTML = hello();
                 </script>
         </div>
+
+            
         <!--Script Source-->
         <script src="JavaScript_1.js"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.remove('fade-out');
+            });
+        </script>
     </body> 
 </html>
