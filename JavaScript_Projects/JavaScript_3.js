@@ -10,3 +10,7 @@ function popupForm() {
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
+
+function myFunction() {
+    document.getElementById("example").style.color="red";
+}
